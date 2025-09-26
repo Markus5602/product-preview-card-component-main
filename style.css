@@ -86,3 +86,11 @@ img {
   gap: 0.4rem;
   font-weight: 500;
 }
+
+.card-btn:hover {
+  cursor: pointer;
+}
+
+.card-btn:active {
+  background-color: hsl(158, 42%, 18%);
+}
