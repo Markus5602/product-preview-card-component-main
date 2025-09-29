@@ -20,6 +20,15 @@ img {
   max-width: 100%;
 }
 
+.mobile-img {
+  max-width: 100%;
+  display: block;
+}
+
+.desktop-img {
+  display: none;
+}
+
 .design {
   position: absolute;
   z-index: 1;
@@ -87,10 +96,25 @@ img {
   font-weight: 500;
 }
 
-.card-btn:hover {
+.cart-btn:hover {
   cursor: pointer;
 }
 
-.card-btn:active {
+.cart-btn:active {
   background-color: hsl(158, 42%, 18%);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: flex;
+    width: 600px;
+  }
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+    width: 300px;
+  }
 }
